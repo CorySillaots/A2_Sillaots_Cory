@@ -4,69 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Task 3</title>
 </head>
 <body>
-<h3>Fahrenheit</h3>   
-   <p id="temp_fahrenheit"></p> 
-        <h3>Celsius</h3>
-            <p id="temp_celsius"></p> 
+    <div>
+        <div id="results">
+            <h4>Fahrenheit</h4>
+                <ul id="temp_fah"></ul>
+        </div>
+        <div id="results">
+            <h4>Celsius</h4>
+                <ul id="temp_cel"></ul>
+        </div>
+    </div>
+    <script>
+let celsius = [];        
+let fahrenheit = [];
+for (let i = 20; i <= 120; i +=5){
+    document.getElementById("temp_fah").insertAdjacentHTML('beforeend',(`<li>${i}</li>`));
+let cel = ((i - 32) / 1.8); 
+let cels = cel.toFixed(1);
+document.getElementById("temp_cel").insertAdjacentHTML('beforeend',(`<li>${cels}</li>`));
+}
 
 
-   <script>
-    let fahrenheit = [];    
-        for (let i = 20; i <= 120; i +=5) {    
-            fahrenheit.push(i);
-        }
-    document.getElementById("temp_fahrenheit").innerHTML = fahrenheit += ("<br>"); 
+//let convert = ((fahrenheit - 32) /1.8);
 
-//convert fahrenheit to celsius
-    let celsius = [];    
-        for (let i = 20; i <= 120; i +=5) {    
-            celsius.push((i - 32) / 1.8);
-        }
-    document.getElementById("temp_celsius").innerHTML = celsius += ("<br>");      
-  
-  
-  
-    
-    
-    // C = (F − 32) / 1.8
-    
-    
-    
-    
-    
-    /* let fahrenheit = [];
-        for (let k = 0; k < celsius.length; k++){
-           let conversion = celsius * 2;
-            fahrenheit.push(conversion);
-
-        }   
-    document.getElementById("temp_fahrenheit").innerHTML = fahrenheit += ("<br>");*/
-        
-
-
-
-
-
-
-    //    let fahrenheit = celsius + 2;   
-//document.getElementById("temp_fahrenheit").innerHTML = fahrenheit;
-   
-
-
-
-//let fahrenheit = [];
-  //  function convert(celsius) {
-    //    var fahr = celsius + 2;
-      //      fahrenheit.push(fahr);
-    //}
-    //document.getElementById("temp_fahrenheit").innerHTML = fahrenheit += ("</br>");  
-   
-   
-   
-   
-   </script>
+document.getElementById("temp_fah").append = fahrenheit;
+    </script>
 </body>
 </html>

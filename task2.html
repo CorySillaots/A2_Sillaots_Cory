@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <p id="response"></p>
+
+<script>
+//Prompt user to enter a number
+let day = prompt("Please enter the weekday number.")
+
+//write switch statement linking user input number to days of the week
+switch(day) {
+    case "1":
+        day = "Today is Monday!";
+    break;
+    case "2":
+        day = "Today is Tuesday!";
+    break;
+    case "3":
+        day = "Today is Wednesday!";
+    break;
+    case "4":
+        day = "Today is Thursday!";
+    break;
+    case "5":
+        day = "Today is Friday!";
+    break;
+    case "6":
+        day = "Today is Saturday!";
+    break;
+    case "7":
+        day = "Today is Sunday!";
+    break;
+    default:
+        day = "Please enter a number between 1 and 7."
+    }
+// Push answer to HTML element    
+    document.getElementById("response").innerHTML = day;
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+<h3>Fahrenheit</h3>   
+   <p id="temp_fahrenheit"></p> 
+        <h3>Celsius</h3>
+            <p id="temp_celsius"></p> 
+
+
+   <script>
+    let fahrenheit = [];    
+        for (let i = 20; i <= 120; i +=5) {    
+            fahrenheit.push(i);
+        }
+    document.getElementById("temp_fahrenheit").innerHTML = fahrenheit += ("<br>"); 
+
+//convert fahrenheit to celsius
+    let celsius = [];    
+        for (let i = 20; i <= 120; i +=5) {    
+            celsius.push((i - 32) / 1.8);
+        }
+    document.getElementById("temp_celsius").innerHTML = celsius += ("<br>");      
+  
+  
+  
+    
+    
+    // C = (F − 32) / 1.8
+    
+    
+    
+    
+    
+    /* let fahrenheit = [];
+        for (let k = 0; k < celsius.length; k++){
+           let conversion = celsius * 2;
+            fahrenheit.push(conversion);
+
+        }   
+    document.getElementById("temp_fahrenheit").innerHTML = fahrenheit += ("<br>");*/
+        
+
+
+
+
+
+
+    //    let fahrenheit = celsius + 2;   
+//document.getElementById("temp_fahrenheit").innerHTML = fahrenheit;
+   
+
+
+
+//let fahrenheit = [];
+  //  function convert(celsius) {
+    //    var fahr = celsius + 2;
+      //      fahrenheit.push(fahr);
+    //}
+    //document.getElementById("temp_fahrenheit").innerHTML = fahrenheit += ("</br>");  
+   
+   
+   
+   
+   </script>
+</body>
+</html>

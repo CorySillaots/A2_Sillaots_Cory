@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+   <p id="info"></p>
+    <p id="line_one"></p>
+ 
+
+<script>
+let rows = prompt("Please enter a number.")
+function printNumbers(rows){
+  for(let i=1;i<=rows; i++){
+   let str='';
+   for(let j=1;j<=i; j++){
+    str = str + j+' ';
+   }
+document.getElementById("line_one").innerHTML = str;  } 
+}
+printNumbers(5);
+    </script>
+
+    
+
+
